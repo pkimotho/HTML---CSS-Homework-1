@@ -1,25 +1,51 @@
 body {
-    background-color: beige;
+    background-color: #fcf594;
+    padding: 0;
+    margin: 0;
 }
 
-.paragraph-font {
+nav {
+    background-color: #107595;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
     font-size: 20px;
+    color: #fcf594;
+    padding: 15px;
+    line-height: 50px;
 }
 
-p>span {
-    font-style: italic;
+nav ul li a:hover {
+    color: #010059;
+    background-color: #fcf594;
 }
 
-p>span:last-child {
-    text-decoration: underline;
+.heading {
+    color: #010059;
 }
 
-.list-font {
-    font-size: 25px;
-}
-
-.heading-padding {
-    padding-bottom: 10px;
+#intro {
+    background-color: #fdbfb3;
+    margin-top: 50px;
+    padding: 10px;
 }
 
 #main-heading {
@@ -28,15 +54,108 @@ p>span:last-child {
     text-align: center;
 }
 
+#main {
+    display: flex;
+}
+
+.card {
+    background-color: #fdbfb3;
+    width: 50%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.paragraph-font {
+    font-size: 20px;
+}
+
+p>span {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.list-font {
+    font-size: 20px;
+}
+
 .unordered-list {
     list-style-image: url('../images/list-icon1.png');
+    line-height: 40px;
 }
 
 .ordered-list {
     list-style-type: lower-roman;
+    line-height: 30px;
 }
 
-.special {
-    font-style: normal;
-    color: red;
+ol li img {
+    width: 30px;
+    height: 30px;
+}
+
+.dish-image {
+    text-align: center;
+    background-color: #fcf594;
+    padding: 20px;
+}
+
+#other-recipes {
+    background-color: #fdbfb3;
+    padding: 10px;
+}
+
+#other-recipes h2 {
+    text-align: center;
+}
+
+#other-recipes ul a {
+    text-decoration: none;
+    color: #010059;
+}
+
+#other-recipes ul a:hover {
+    color: #107595;
+}
+
+footer {
+    background-color: #107595;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fcf594;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 400px) {
+    #main {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+    }
+    #other-recipes ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #main {
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: 50%;
+    }
+    #other-recipes ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
