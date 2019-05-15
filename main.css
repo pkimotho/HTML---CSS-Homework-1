@@ -2,21 +2,41 @@ body {
     background-color: beige;
 }
 
-p {
+.paragraph-font {
     font-size: 20px;
 }
 
-li {
+p>span {
+    font-style: italic;
+}
+
+p>span:last-child {
+    text-decoration: underline;
+}
+
+.list-font {
     font-size: 25px;
 }
 
-h1,
-h2 {
+.heading-padding {
     padding-bottom: 10px;
 }
 
-h1 {
+#main-heading {
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
+}
+
+.unordered-list {
+    list-style-image: url('../images/list-icon1.png');
+}
+
+.ordered-list {
+    list-style-type: lower-roman;
+}
+
+.special {
+    font-style: normal;
+    color: red;
 }
