@@ -1,0 +1,22 @@
+body {
+    background-color: beige;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 25px;
+}
+
+h1,
+h2 {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
